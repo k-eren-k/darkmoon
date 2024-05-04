@@ -1,0 +1,1012 @@
+<!DOCTYPE html>
+<!-- Created By itsMcraft#9988 -->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark Moon</title>  <link rel="icon" type="image/x-icon" href="https://images-ext-1.discordapp.net/external/Pz8JLwwPNkvYF85Z5hadgaDctVArX2AmykALF6oZkOY/%3Fsize%3D2048/https/cdn.discordapp.com/avatars/1235667183405895710/a813994f2fd2a8ccf8f54e006c1c1a7b.png?format=webp&quality=lossless&width=676&height=676">
+
+    <link rel="stylesheet" href="style.css">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+:root {
+    --bg-color: #121212;
+    --main-color: rgb(184, 126, 20);
+    --main-hover-color: rgb(118, 184, 20);
+    --second-color: #1a1a1a;
+    --third-color: #2c2c2c;
+    --nav-text-color: #98999b;
+    --nav-text-hover-color: #fff;
+    --heading-color: #fffce4;
+    --small-text-color: #c7c7c7;
+    --very-small-text-color: #999999;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+/* random */
+h1 {
+    justify-content: center;
+    display: flex;
+    color: var(--heading-color);
+    width: 100%;
+}
+
+h2 {
+    margin-left: 1.5%;
+    color: var(--heading-color);
+}
+
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 1.825rem;
+    margin: 1.3rem 0;
+    margin-top: 8px;
+    color: var(--small-text-color);
+}
+
+p {
+    color: var(--very-small-text-color);
+    font-size: 0.9rem;
+    margin: 1rem 0;
+    line-height: 1.5;
+}
+
+a {
+    text-decoration: none;
+    margin: 1rem 0;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.8125rem;
+    letter-spacing: 1px;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: #000000;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--main-color);
+    border-radius: 15px;
+    transition: 0.35s;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--main-hover-color);
+
+}
+
+.reveal {
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 2s ease;
+}
+
+.reveal.active {
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+.wrapper {
+    margin: 100px auto;
+    max-width: 1100px;
+
+}
+
+.title {
+    margin-top: 30px;
+    text-align: center;
+    width: 100%;
+    height: 65px;
+    margin-bottom: 20px;
+
+}
+
+.th1 {
+    display: flex;
+    justify-content: center;
+}
+
+.thr {
+    width: 180px;
+    justify-content: center;
+}
+
+.thr hr {
+    background-color: var(--main-color);
+    height: 5px;
+    border: none;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+svg {
+    display: block;
+}
+
+.curve {
+    background-color: var(--bg-color);
+    margin: 0;
+    display: block;
+    fill: var(--second-color);
+}
+
+
+
+.curved {
+    background-color: var(--second-color);
+    margin: 0;
+    display: block;
+    fill: var(--bg-color);
+}
+
+/* random end */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--bg-color);
+
+}
+
+
+
+/* navbar */
+header {
+    height: 80px;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    padding: 10px 70px;
+    background-color: transparent;
+}
+
+.logo {
+    cursor: pointer;
+    font-size: 30px;
+    width: 102PX;
+    color: var(--heading-color);
+}
+
+.nav-area {
+    list-style: none;
+}
+
+.nav-area li {
+    display: inline-block;
+    padding: 0 15px;
+    text-transform: uppercase;
+}
+
+.nav-area li a {
+    transition: .3s;
+    color: var(--nav-text-color);
+    font-size: 15px;
+}
+
+.nav-area li a:hover {
+    color: var(--nav-text-hover-color);
+}
+
+.btn-area {
+    cursor: pointer;
+    color: var(--heading-color);
+    font-size: 16px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 10px 30px;
+    border-radius: 5px;
+    background-color: var(--main-color);
+    transition: .35s;
+}
+
+.btn-area:hover {
+    background-color: #b87f148f;
+}
+
+::selection {
+    color: #fff;
+    background: #007bff;
+}
+
+/* navbar end */
+
+/* home */
+
+.home {
+    margin-top: 150px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.botname{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+
+.bot-description {
+    margin-right: 150px;
+    width: 100%;
+    margin-top: -5px;
+    display: flex;
+    justify-content: center;
+}
+
+.home-btn {
+    margin-top: 15px;
+    width: auto;
+    margin-left: 10.5px;
+    padding: 8px 50px;
+    border-radius: 50px;
+    border: none;
+    background: var(--main-color);
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+    transition: .35s;
+}
+
+.home-btn:hover {
+    background-color: #b87f149d;
+}
+
+.home-img img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+
+}
+
+/* home end */
+/* features */
+.features {
+    background-color: var(--second-color);
+}
+
+
+
+.feature h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 1.3rem;
+    margin: 1rem 0 0.6rem;
+}
+
+.features-grid {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.feature {
+    background: none;
+    margin: 20px;
+    cursor: pointer;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    -webkit-box-flex: 1;
+    flex: 1;
+    display: -webkit-box;
+    display: flex;
+    flex-wrap: wrap;
+    border: 2px solid var(--third-color);
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.feature:hover {
+    -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.08);
+    -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.08);
+}
+
+.feature i {
+    font-size: 3.45rem;
+    margin: 1rem 0;
+}
+
+.feature1 i,
+.feature1 h4,
+.feature1 .cta {
+    color: #42b7ca;
+}
+
+.feature1:hover {
+    border: 2px solid #42b7ca;
+}
+
+.feature2 i,
+.feature2 h4,
+.feature2 .cta {
+    color: #425fca;
+}
+
+.feature2:hover {
+    border: 2px solid #425fca;
+}
+
+.feature3 i,
+.feature3 h4,
+.feature3 .cta {
+    color: #9c42ca;
+}
+
+.feature3:hover {
+    border: 2px solid #9c42ca;
+}
+
+.feature .cta span {
+    font-size: 0.6rem;
+}
+
+.feature>* {
+    flex: 1 1 100%;
+}
+
+.feature .cta {
+    align-self: flex-end;
+}
+
+/* features end */
+.wrapper{
+    width: 55%;
+}
+/* commands */
+.wrapper nav {
+    display: flex;
+    justify-content: center;
+}
+
+.wrapper .categorys {
+    display: flex;
+    max-width: 720px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.categorys span {
+    padding: 7px 25px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    color: var(--main-color);
+    border-radius: 50px;
+    border: 2px solid var(--main-color);
+    transition: all 0.3s ease;
+}
+
+.categorys span.active,
+.categorys span:hover {
+    color: #fff;
+    background: var(--main-color);
+}
+
+.commands {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.commands .command {
+    width: 100%;
+    color: #fff;
+    margin-bottom: 15px;
+    padding: 7px;
+    height: auto;
+    border-radius: 15px;
+    background-color: var(--second-color);
+}
+
+.commands .command span {
+    flex-direction: column;
+    position: relative;
+    display: flex;
+    height: auto;
+    margin-top: 5px;
+    margin-left: 1%;
+    width: 98%;
+    border-radius: 15px;
+    background-color: var(--third-color);
+    margin-bottom: 1%;
+    ;
+}
+
+
+.cmdinfo {
+    margin-left: 1%;
+    display: flex;
+    height: 45px;
+    justify-content: left;
+    align-items: center;
+}
+
+.cmdinfo p {
+    font-size: 1.25rem;
+    color: var(--small-text-color);
+}
+
+.cmdali {
+    margin-left: 1%;
+    margin-bottom: 1%;
+    justify-content: center;
+    margin-top: -2.75%;
+    color: var(--very-small-text-color);
+}
+
+.cmdali p {
+    font-size: 1.1rem;
+}
+
+.commands .command.hide {
+    display: none;
+}
+
+.commands .command.show {
+    animation: animate 0.4s ease;
+}
+
+/* commands end */
+
+
+/* faq */
+.faq {
+    background-color: var(--second-color);
+}
+
+main#questions {
+    display: block;
+    position: relative;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.live-search-box {
+    width: 100%;
+    margin: 50px 0px;
+    font-size: 16px !important;
+    display: block;
+    padding: 1em;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 1px solid var(--bg-color) !important;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.live-search-box:focus {
+    border: 1px solid !important;
+}
+
+.topic {
+    padding: 20px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    background: var(--bg-color);
+    margin: 5px 0px;
+    border-radius: 10px;
+}
+
+.topic h2.question {
+    padding-bottom: 20px;
+}
+
+.open {
+    cursor: pointer;
+    display: block;
+    padding: 0px;
+}
+
+.open:hover {
+    opacity: 0.7;
+}
+
+.expanded {
+    background-color: var(--third-color);
+    transition: all .3s ease-in-out;
+}
+
+.ptag {
+    display: none;
+}
+
+.question {
+    padding-top: 30px;
+    padding-right: 40px;
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--small-text-color);
+}
+
+.answer {
+    font-size: 16px;
+    line-height: 16px;
+    display: none;
+    margin-bottom: 30px;
+    text-align: justify;
+    padding-bottom: 20px !important;
+}
+
+.faq-t {
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    display: block;
+    float: right;
+    position: relative;
+    top: -55px;
+    right: 10px;
+    width: 10px;
+    height: 10px;
+    background: transparent;
+    border-left: 2px solid var(--main-color);
+    border-bottom: 2px solid var(--main-color);
+    transition: all .3s ease-in-out;
+}
+
+.faq-o {
+    top: -50px;
+    -moz-transform: rotate(-224deg);
+    -ms-transform: rotate(-224deg);
+    -webkit-transform: rotate(-224deg);
+    transform: rotate(-224deg);
+}
+
+.live-search-box {
+    background: var(--bg-color);
+    width: 100%;
+    margin: 50px 0px;
+    font-size: 16px !important;
+    display: block;
+    padding: 1em;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 1px solid var(--third-color) !important;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    color: var(--very-small-text-color);
+}
+
+/* faq end */
+/* footer */
+footer {
+    display: flex;
+    width: auto;
+    height: 125px;
+    background-color: var(--second-color);
+    align-items: center;
+}
+
+
+
+.foot {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 125px;
+    color: white;
+}
+
+/* footer end */
+/* @ */
+@keyframes animate {
+    0% {
+        transform: scale(0.5);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+
+@media (max-width: 1200px) {
+
+    .wrapper nav .categorys {
+        max-width: 600px;
+    }
+
+    .wrapper {
+        max-width: 695px;
+        margin: 30px auto;
+    }
+
+    nav .categorys span {
+        padding: 7px 15px;
+    }
+}
+
+@media all and (max-width:900px) {
+    .features-grid {
+        display: -webkit-box;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        flex-direction: column;
+    }
+}
+
+
+@media (max-width: 710px) {
+    .wrapper nav .categorys {
+        max-width: 600px;
+    }
+
+    .wrapper {
+        max-width: 450px;
+        margin: 30px auto;
+    }
+
+    nav .categorys span {
+        padding: 7px 15px;
+    }
+
+    header {
+        padding: 10px 25px;
+    }
+
+    .top-nav {
+        display: none;
+    }
+.botname{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+    .home {
+        display: flex;
+        width: 100%;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .home-text {
+        text-align: center;
+    }
+
+    .bot-description {
+        margin-right: 0;
+    }
+
+    .nav-area li a {
+        font-size: 12.25px;
+    }
+}
+
+@media (max-width: 600px) {
+    .wrapper {
+        margin: 30px auto;
+    }
+
+    .wrapper nav .categorys {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav .categorys span {
+        margin: 5px;
+    }
+}
+
+/* @ end */
+
+
+.buttons{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+    <!-- navbar -->
+    <header>
+        <h1 class="logo">DM</h1>
+        <nav>
+            <ul class="nav-area top-nav">
+                <li><a href="#top">Ana Sayfa</a></li>
+                <li><a href="#features">Bot Hakkında</a></li>
+                <li><a href="#commands">Komutlar</a></li>
+            </ul>
+        </nav>
+        <a  href="https://discord.com/oauth2/authorize?client_id=1235667183405895710&permissions=8&scope=bot"  target="_blank" class="btn-area">Ekle</a>
+    </header>
+    <!-- navbar end -->
+    <!-- home -->
+    <div class="wrapper">
+        <div class="home" id="home">
+            <div class="home-text">
+                <h1 id="botname">Dark Moon</h1>
+                <p class="bot-description">Türkçe Discord Botu'mu arıyorsun? Öyle ise Atalantis Bot Tam Sana Göre :)</p>
+                <div class="buttons">
+                    <a href="https://discord.com/oauth2/authorize?client_id=1235667183405895710&permissions=8&scope=bot" class="home-btn">Ekle</a>
+                    <a href="https://discord.gg/WAWdXJtHeY" class="home-btn">Destek</a>
+                </div>
+            </div>
+         
+        </div>
+    </div>
+    <!-- home end -->
+    <!-- features -->
+    <div class="features">
+        <div class="curve">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill-opacity="1" id="features"
+                    d="M0,128L48,149.3C96,171,192,213,288,229.3C384,245,480,235,576,202.7C672,171,768,117,864,96C960,75,1056,85,1152,106.7C1248,128,1344,160,1392,176L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+                </path>
+            </svg>
+        </div>
+        <div class="wrapper reveal">
+            <div class="title">
+                <div class="th1">
+                    <h1>En İyisini Sunuyoruz</h1>
+                </div>
+                <center>
+                    <div class="thr">
+                        <hr>
+                    </div>
+                </center>
+            </div>
+            <!-- feature start -->
+            <div class="features-grid">
+                <div class="feature feature1">
+                    <i class="fas fa-clipboard-list"></i>
+                    <h4>Moderasyon Komutları</h4>
+                    <p>Discord sunucunuz için en iyi moderasyon komutlarını sunuyoruz!</p>
+
+                </div>
+                <!-- feature end -->
+                <!-- feature start -->
+                <div class="feature feature2">
+                    <i class="fas fa-server"></i>
+                    <h4>7/24 Aktif</h4>
+                    <p>Discord Botumuz profosyonel olarak 24/7 hizmet sağlamaktadır.</p>
+
+                </div>
+                <!-- feature end -->
+                <!-- feature start -->
+                <div class="feature feature3">
+                    <i class="fab fa-angellist"></i>
+                    <h4>Kolay Kullanım
+                    </h4>
+                    <p>Basit altyapısı ile kullanıcılarına kolay bir deneyim sunar.</p>
+                </div>
+                <!-- feature end -->
+            </div>
+        </div>
+        <div class="curved">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill-opacity="1" id="commands"
+                    d="M0,224L48,229.3C96,235,192,245,288,218.7C384,192,480,128,576,133.3C672,139,768,213,864,229.3C960,245,1056,203,1152,186.7C1248,171,1344,181,1392,186.7L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+                </path>
+            </svg>
+        </div>
+    </div>
+    <!-- features end -->
+    <!-- commands -->
+    <div class="wrapper reveal">
+        <div class="title">
+            <div class="th1">
+                <h1>Komutlar</h1>
+            </div>
+            <center>
+                <div class="thr">
+                    <hr>
+                </div>
+            </center>
+        </div>
+        <!-- Command Category -->
+        <nav>
+            <div class=" categorys">
+                <span class="category active" data-name="all">Hepsi</span>
+
+            </div>
+        </nav>
+        <!-- Commands -->
+        <div class="commands">
+            <!-- Command Start -->
+            <div class="command" data-name="fun">
+                <h2>!yardım</h2><span>
+                    <div class="cmdinfo">
+                        <p>Sunucunuzda Bu Komutu Kullanarak Bütün Komutlara Ulaşa Bilirsiniz!</p>
+                    </div>
+                </span>
+            </div>
+          
+            <!-- Command End -->
+        </div>
+    </div>
+    <!-- commands end -->
+
+    <footer>
+
+        <div class="wrapper">
+            <div class="foot">
+                <nav>
+                    <ul class="nav-area bottom-nav">
+                        <li><a href="#top">Ana Sayfa</a></li>
+                        <li><a href="#features">Bot Hakkında</a></li>
+                        <li><a href="#commands">Komutlar</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </footer>
+    <!-- footer end -->
+    <script src="main.js"></script>
+    <script src="commands.js"></script>
+    <script src="https://code.iconify.design/1/1.0.4/iconify.min.js">   </script>
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+</body>
+<script>$(document).ready(function () {
+  $(".open").click(function () {
+    var container = $(this).parents(".topic");
+    var answer = container.find(".answer");
+    var trigger = container.find(".faq-t");
+
+    answer.slideToggle(200);
+
+    if (trigger.hasClass("faq-o")) {
+      trigger.removeClass("faq-o");
+    } else {
+      trigger.addClass("faq-o");
+    }
+
+    if (container.hasClass("expanded")) {
+      container.removeClass("expanded");
+    } else {
+      container.addClass("expanded");
+    }
+  });
+  $(".question").each(function () {
+    $(this).attr(
+      "data-search-term",
+      $(this).text().toLowerCase() + $(this).find("ptag").text().toLowerCase()
+    );
+  });
+
+  $(".live-search-box").on("keyup", function () {
+    var searchTerm = $(this).val().toLowerCase();
+
+    $(".question").each(function () {
+      if (
+        $(this).filter("[data-search-term *= " + searchTerm + "]").length > 0 ||
+        searchTerm.length < 1
+      ) {
+        $(this).parent().parent().show();
+      } else {
+        $(this).parent().parent().hide();
+      }
+    });
+  });
+});
+window.addEventListener("scroll", reveal);
+
+function reveal() {
+  var reveals = document.querySelectorAll(".reveal");
+
+  for (var i = 0; i < reveals.length; i++) {
+    var windowheight = window.innerHeight;
+    var revealtop = reveals[i].getBoundingClientRect().top;
+    var revealpoint = 150;
+
+    if (revealtop < windowheight - revealpoint) {
+      reveals[i].classList.add("active");
+    } else {
+      reveals[i].classList.remove("active");
+    }
+  }
+}
+</script>
+<script>const showMenu = (toggleId, navId) => {
+  const toggle = document.getElementById(toggleId),
+    nav = document.getElementById(navId);
+
+  if (toggle && nav) {
+    toggle.addEventListener("click", () => {
+      nav.classList.toggle("show");
+      toggle.classList.toggle("bx-x");
+    });
+  }
+};
+showMenu("header-toggle", "nav-menu");
+
+const navLink = document.querySelectorAll(".nav__link");
+
+function linkAction() {
+  navLink.forEach((n) => n.classList.remove("active"));
+  this.classList.add("active");
+}
+navLink.forEach((n) => n.addEventListener("click", linkAction));
+
+const filtercategory = document.querySelector(".categorys");
+const filterImg = document.querySelectorAll(".commands .command");
+
+window.onload = () => {
+  filtercategory.onclick = (selectedcategory) => {
+    if (selectedcategory.target.classList.contains("category")) {
+      filtercategory.querySelector(".active").classList.remove("active");
+      selectedcategory.target.classList.add("active");
+      let filterName = selectedcategory.target.getAttribute("data-name");
+      filterImg.forEach((command) => {
+        let filterImges = command.getAttribute("data-name");
+        if (filterImges == filterName || filterName == "all") {
+          command.classList.remove("hide");
+          command.classList.add("show");
+        } else {
+          command.classList.add("hide");
+          command.classList.remove("show");
+        }
+      });
+    }
+  };
+  for (let i = 0; i < filterImg.length; i++) {
+    filterImg[i].setAttribute("onclick", "preview(this)");
+  }
+};
+
+const previewBox = document.querySelector(".preview-box"),
+  categoryName = previewBox.querySelector(".title p"),
+  previewImg = previewBox.querySelector("img"),
+  closeIcon = previewBox.querySelector(".icon"),
+  shadow = document.querySelector(".shadow");
+
+function preview(element) {
+  let selectedPrevImg = element.querySelector("img").src;
+  let selectedImgCategory = element.getAttribute("data-name");
+  previewImg.src = selectedPrevImg;
+  categoryName.textContent = selectedImgCategory;
+  previewBox.classList.add("show");
+  shadow.classList.add("show");
+  closeIcon.onclick = () => {
+    previewBox.classList.remove("show");
+    shadow.classList.remove("show");
+    document.querySelector("body").style.overflow = "auto";
+  };
+}
+</script>
+</html>
